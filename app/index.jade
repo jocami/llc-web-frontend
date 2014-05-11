@@ -23,7 +23,7 @@ html.no-js
 		link(rel='stylesheet', href='styles/main.css')
 		link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
 		//- endbuild
-	body(ng-app="app")
+	body(ng-app="llcApp")
 		//-if lt IE 7
 			p.browsehappy
 				| You are using an
@@ -33,7 +33,9 @@ html.no-js
 				| to improve your experience.
 
 		//- Add your site or application content here
+		include views/common/header
 		.container(ng-view='')
+		include views/common/footer
 		//- Google Analytics: change UA-XXXXX-X to be your site's ID
 		script
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -70,7 +72,7 @@ html.no-js
 		// APP scripts
 		script(src='scripts/app.js')
 		//	Controllers
-
+		script(src='scripts/controllers/UtilsCtrl.js')
 		//	Services
 
 		//	Directives

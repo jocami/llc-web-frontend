@@ -1,0 +1,36 @@
+#header{
+	padding: 12px 35px 0 35px;
+	min-height: 48px;
+	background: white;
+	div{
+		padding: 0px;
+	};
+	a{
+		color: black;
+		text-decoration: none;
+	};
+	.logo{
+
+	};
+	.list-inline{
+		font-size: 17px;
+		text-align: center;
+		margin: -12px 0 0 0;
+		font-weight: bold;
+		li{
+			min-height: 48px;
+			padding: 12px 20px 0 20px;
+			margin-right: -5px;
+		};
+		li.active, li:hover, li:focus{
+			background: $red;
+		};
+	};
+	.profile{
+		text-align: end;
+		color: $secondGrey;
+		i{
+			margin-right: 5px;
+		};
+	};
+};

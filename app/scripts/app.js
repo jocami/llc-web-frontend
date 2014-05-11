@@ -1,16 +1,22 @@
 'use strict';
 
-angular.module('app', [
+angular.module('llcApp', [
   'ngCookies',
   'ngResource',
   'ngRoute'
 ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html'
+      .when('/timeline', {
+        templateUrl: 'views/pages/timeline.html'
+      })
+      .when('/statistics', {
+        templateUrl: 'views/pages/statistics.html'
+      })
+      .when('/contact', {
+        templateUrl: 'views/pages/contact.html'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/timeline'
       });
   });

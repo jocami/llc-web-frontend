@@ -1,0 +1,15 @@
+#header.container(ng-controller = "UtilsCtrl")
+	.col-md-12.col-xs-12
+		.col-md-2.col-xs-2.logo
+			label LLC
+		.col-md-8.col-xs-8
+			ul.list-inline
+				li(ng-class="getClassActiveFromPath('/timeline')")
+					a(href = "/#/timeline") Timeline
+				li(ng-class="getClassActiveFromPath('/statistics')")
+					a(href = "/#/statistics") Estadisticas
+				li(ng-class="getClassActiveFromPath('/contact')")
+					a(href = "/#/contact") Contacto
+		.col-md-2.col-xs-2.profile
+			i.glyphicon.glyphicon-user
+			a(href = "/#/timeline") Perfil
