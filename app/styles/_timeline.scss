@@ -1,0 +1,75 @@
+#timeline{
+	height: 500px;
+	margin-top: 20px;
+	.header-timeline{
+		height: 200px;
+		margin: 0px;
+		padding: 0px;
+		.title{
+			text-align: center;
+			border: 1px solid $secondGrey;
+			border-radius:4px;
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			color: $orange;
+			background: $grey;
+		};
+		.body-timeline{
+			border: 1px solid $secondGrey;
+			border-top: none;
+			padding-bottom: 20px;
+			.info-timeline{
+				padding-top: 10px;
+				color: $secondGrey;
+				text-align: center;
+				i{
+					font-size: 20px;
+					margin-right: 10px;
+					cursor: pointer;
+				};
+				label{
+					font-size: 17px;
+					cursor: pointer;
+				};
+			};
+			.filter{
+				padding-top: 30px;
+				text-align: center;
+				.date-filter{
+					.form-control{
+						width: 60%;
+						margin: 0px;
+						float: left;
+						border-top-right-radius: 0px;
+						border-bottom-right-radius: 0px;
+					};
+					button{
+						float: left;
+					};
+				};
+				.rate-filter{
+					select{
+						font-size: 14px;
+						padding: 6px 12px;
+						border: 1px solid $grey;
+						height: 34px;
+						border-radius: 4px;
+						width: 70%;
+						text-align: center;
+					};
+				};
+				.location-filter{
+					select{
+						font-size: 14px;
+						padding: 6px 12px;
+						border: 1px solid $grey;
+						height: 34px;
+						border-radius: 4px;
+						width: 70%;
+						text-align: center;
+					};
+				};
+			};
+		};
+	};
+};
