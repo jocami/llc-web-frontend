@@ -4,9 +4,7 @@ angular.module('llcApp', [
   'ngCookies',
   'ngResource',
   'ngRoute',
-  'ui.date',
-  'ui.sortable',
-  'ui.bootstrap'
+  'ui.date'
 ])
   .config(function ($routeProvider) {
     $routeProvider
