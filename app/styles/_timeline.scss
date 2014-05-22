@@ -116,12 +116,12 @@
 	        .timeline{
 	        	li.timeline-inverted{
 	        		.timeline-panel{
-	        			.timeline-body{
-	        				.value-div{
-	        					float: none;
-	        				}
-	        			}
-	        		}
+	        			background: -webkit-linear-gradient(right, $white, $redtimeline); /* For Safari 5.1 to 6.0 */
+						background: -o-linear-gradient(left, $white, $redtimeline); /* For Opera 11.1 to 12.0 */
+						background: -moz-linear-gradient(left, $white, $redtimeline); /* For Firefox 3.6 to 15 */
+						background: linear-gradient(to left, $white, $redtimeline); /* Standard syntax (must be last) */
+	            		text-align: right;
+	            		}
 	        	}
 	        }
 
@@ -134,25 +134,24 @@
 	            position: relative;
 	            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 	            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-	            .info{
-	            	padding:0px;
-	            	div{
-	            		padding:0 0;
+	            background: -webkit-linear-gradient(left, $white, $greentimeline); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(right, $white, $greentimeline); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(right, $white, $greentimeline); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(to right, $white, $greentimeline); /* Standard syntax (must be last) */
+	            .hour{
+	            	label{
+	            		font-size: 1.2em;
+	            		font-weight: bold
 	            	}
-		            .hour{
-		            	label{
-		            		font-size: 1.2em;
-		            		font-weight: bold
-		            	}
-		            }
-		            .value{
-		            	label{
-		            		font-size: 2em;
-		            		font-weight: bold
-		            	}
-		            }  	
 	            }
-	        }
+	            .value{
+	            	label{
+	            		font-size: 2em;
+	            		font-weight: bold
+	            	}
+	            }  	
+            }
+	        
 
 	            .timeline > li > .timeline-panel:before {
 	                position: absolute;
