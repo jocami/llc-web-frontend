@@ -77,37 +77,59 @@
 		    position: relative;
 		}
 		.legend{
-			padding: 50px 0 0 55px;
+			padding: 20px 0 0 55px;
 			.cheap{
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.39);
+				border: 1px solid $secondGrey;
+				border-radius: 4px;
 				margin-bottom: 50px;
 				.title{
-					border: 1px solid $secondGrey;
-					border-bottom: none;
+					border-bottom: 1px solid $secondGrey;
+					background: green;
+					padding: 5px 0 0 0;
+					text-align: center;
 					label{
-						padding-bottom:10px;
+						padding: 0px;
+						font-size: 22px;
+						color: black;
 					}
 				}
 				.value{
-					border: 1px solid $secondGrey;
+					text-align: center;
 					label{
+						font-size: 17px;
 						display: block;
 						padding-bottom:10px;
+						padding-top: 10px;
+						border-bottom: 1px solid $secondGrey;
+						margin: 0px;
 					}
 				}
 			}
 			.expensive{
+				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.39);
+				border: 1px solid $secondGrey;
+				border-radius: 4px;
+				margin-bottom: 50px;
 				.title{
-					border: 1px solid $secondGrey;
-					border-bottom: none;
+					border-bottom: 1px solid $secondGrey;
+					background: red;
+					padding: 5px 0 0 0;
+					text-align: center;
 					label{
-						padding-bottom:10px;
+						color: black;
+						font-size: 22px;
 					}
 				}
 				.value{
-					border: 1px solid $secondGrey;
+					text-align: center;
 					label{
+						font-size: 17px;
 						display: block;
 						padding-bottom:10px;
+						padding-top: 10px;
+						border-bottom: 1px solid $secondGrey;
+						margin: 0px;
 					}
 				}
 			}
@@ -230,6 +252,7 @@
 					border-top-left-radius: 50%;
 					border-bottom-right-radius: 50%;
 					border-bottom-left-radius: 50%;
+					left: 286px;
 		        }
 
 		        .timeline > li.timeline-inverted > .timeline-panel {
