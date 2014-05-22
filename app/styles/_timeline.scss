@@ -174,11 +174,11 @@
 	        .timeline{
 	        	li.timeline-inverted{
 	        		.timeline-panel{
-	        			background: -webkit-linear-gradient(right, $white, $redtimeline); /* For Safari 5.1 to 6.0 */
-						background: -o-linear-gradient(left, $white, $redtimeline); /* For Opera 11.1 to 12.0 */
-						background: -moz-linear-gradient(left, $white, $redtimeline); /* For Firefox 3.6 to 15 */
-						background: linear-gradient(to left, $white, $redtimeline); /* Standard syntax (must be last) */
-	            		text-align: right;
+	        			text-align: right;
+	        			.hour{
+	            			border-bottom: 1px solid $green-light;
+	            			background-color: $green-light;
+	            			}
 	            		}
 	        	}
 	        }
@@ -187,16 +187,16 @@
 	            width: 43%;
 	            float: left;
 	            border: 1px solid #d4d4d4;
-	            border-radius: 2px;
+	            border-radius: 5px;
 	            padding: 0px;
 	            position: relative;
-	            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-	            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-	            background: -webkit-linear-gradient(left, $white, $greentimeline); /* For Safari 5.1 to 6.0 */
-				background: -o-linear-gradient(right, $white, $greentimeline); /* For Opera 11.1 to 12.0 */
-				background: -moz-linear-gradient(right, $white, $greentimeline); /* For Firefox 3.6 to 15 */
-				background: linear-gradient(to right, $white, $greentimeline); /* Standard syntax (must be last) */
+	            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.29);
+	            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.29);
 	            .hour{
+	            	border-bottom: 1px solid $red-light;
+	            	border-top-left-radius: 5px;
+	            	border-top-right-radius: 5px;
+	            	background-color: $red-light;
 	            	label{
 	            		font-size: 1.2em;
 	            		font-weight: bold
