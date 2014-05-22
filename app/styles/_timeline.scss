@@ -76,6 +76,42 @@
 		    padding: 20px 0 20px;
 		    position: relative;
 		}
+		.legend{
+			padding: 50px 0 0 55px;
+			.cheap{
+				margin-bottom: 50px;
+				.title{
+					border: 1px solid $secondGrey;
+					border-bottom: none;
+					label{
+						padding-bottom:10px;
+					}
+				}
+				.value{
+					border: 1px solid $secondGrey;
+					label{
+						display: block;
+						padding-bottom:10px;
+					}
+				}
+			}
+			.expensive{
+				.title{
+					border: 1px solid $secondGrey;
+					border-bottom: none;
+					label{
+						padding-bottom:10px;
+					}
+				}
+				.value{
+					border: 1px solid $secondGrey;
+					label{
+						display: block;
+						padding-bottom:10px;
+					}
+				}
+			}
+		}
 
 		    .timeline:before {
 		        top: 0;
