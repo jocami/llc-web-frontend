@@ -85,7 +85,7 @@
 				margin-bottom: 50px;
 				.title{
 					border-bottom: 1px solid $secondGrey;
-					background: green;
+					background: $green;
 					padding: 5px 0 0 0;
 					text-align: center;
 					label{
@@ -113,7 +113,7 @@
 				margin-bottom: 50px;
 				.title{
 					border-bottom: 1px solid $secondGrey;
-					background: red;
+					background: $red;
 					padding: 5px 0 0 0;
 					text-align: center;
 					label{
@@ -177,7 +177,7 @@
 	        			text-align: right;
 	        			.hour{
 	            			border-bottom: 1px solid $green-light;
-	            			background-color: $green-light;
+	            			background-color: $red;
 	            			}
 	            		}
 	        	}
@@ -192,14 +192,16 @@
 	            position: relative;
 	            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.29);
 	            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.29);
+	            top: -10px;
 	            .hour{
-	            	border-bottom: 1px solid $red-light;
+	            	border-bottom: 1px solid $secondGrey;
 	            	border-top-left-radius: 5px;
 	            	border-top-right-radius: 5px;
-	            	background-color: $red-light;
+	            	background-color: $green;
 	            	label{
-	            		font-size: 1.2em;
-	            		font-weight: bold
+	            		font-size: 1.3em;
+	            		font-weight: bold;
+	            		margin-bottom: 0px;
 	            	}
 	            }
 	            .value{
@@ -286,7 +288,7 @@
 		}
 
 		.timeline-badge.danger {
-		    background-color: #d9534f !important;
+		    background-color: $red !important;
 		}
 
 		.timeline-badge.info {
