@@ -128,7 +128,7 @@
 	        }
 
 	        .timeline > li > .timeline-panel {
-	            width: 46%;
+	            width: 43%;
 	            float: left;
 	            border: 1px solid #d4d4d4;
 	            border-radius: 2px;
@@ -136,41 +136,24 @@
 	            position: relative;
 	            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 	            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-	            .timeline-heading{
-	            	background: $red;
-	            	padding: 0 0 0 10px;
-	            	height: 120px;
-	            	.big{
-	            		padding: 0px;
-	            		label{
-		            		width: 100%;
-		            		font-size: 50px;
-		            		font-weight: bold;
-		            		padding-top: 25px;
-	            		};
-	            	};
-	            	.small{
-	            		padding: 0px;
-	            		label{
-	            			font-size: 17px;
-	            			font-weight: bold;
-	            			padding-top: 27px;
-	            			padding-top: 60px;
-	            		};
-	            	};
-		        };
-	            .timeline-body{
-	            	.value-div{
-	            		padding: 0px;
-		            	.circle-value{
-		            		border: 3px dashed $secondGrey;
-		            		width: 100px;
-		            		height: 100px;
-		            		border-radius: 50%;
-		            		margin: 10px 0 0 15px;
-		            	};
-	            	};
-	            };
+	            .info{
+	            	padding:0px;
+	            	div{
+	            		padding:0 0;
+	            	}
+		            .hour{
+		            	label{
+		            		font-size: 1.2em;
+		            		font-weight: bold
+		            	}
+		            }
+		            .value{
+		            	label{
+		            		font-size: 2em;
+		            		font-weight: bold
+		            	}
+		            }  	
+	            }
 	        }
 
 	            .timeline > li > .timeline-panel:before {
@@ -206,7 +189,7 @@
 					text-align: center;
 					position: absolute;
 					top: 16px;
-					left: 50.99%;
+					left: 51.7%%;
 					margin-left: -25px;
 					background-color: #999999;
 					z-index: 100;
