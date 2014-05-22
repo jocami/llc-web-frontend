@@ -4,7 +4,8 @@ angular.module('llcApp', [
   'ngCookies',
   'ngResource',
   'ngRoute',
-  'ui.date'
+  'ui.date',
+  'ui.bootstrap'
 ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -21,3 +22,4 @@ angular.module('llcApp', [
         redirectTo: '/timeline'
       });
   });
+  

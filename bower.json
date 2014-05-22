@@ -19,7 +19,8 @@
     "angular-sanitize": "~1.2.16",
     "sass-bootstrap": "~3.0.2",
     "angular-ui-date": "~0.0.3",
-    "angular-ui-sortable": "~0.12.6"
+    "angular-ui-sortable": "~0.12.6",
+    "momentjs": "~2.6.0"
   },
   "resolutions": {
     "angular": ">=1"
