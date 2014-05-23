@@ -84,6 +84,7 @@
 				border: 1px solid $secondGrey;
 				border-radius: 4px;
 				margin-bottom: 50px;
+				padding: 0px;
 				.title{
 					border-bottom: 1px solid $secondGrey;
 					background: $green;
@@ -96,14 +97,35 @@
 					}
 				}
 				.value{
+					.hour{
 					text-align: center;
-					label{
-						font-size: 17px;
-						display: block;
-						padding-bottom:10px;
-						padding-top: 10px;
-						border-bottom: 1px solid $secondGrey;
-						margin: 0px;
+					padding: 0px;
+						label{
+							font-size: 17px;
+							display: block;
+							padding-bottom:10px;
+							padding-top: 10px;
+							border-bottom: 1px solid $secondGrey;
+							margin: 0px;
+							span{
+								padding-left: 15px;
+							}
+						}
+					}
+					.price{
+					text-align: right;
+					padding: 0px;
+						label{
+							font-size: 17px;
+							display: block;
+							padding-bottom:10px;
+							padding-top: 10px;
+							border-bottom: 1px solid $secondGrey;
+							margin: 0px;
+							span{
+								padding-left: 15px;
+							}
+						}
 					}
 				}
 			}
@@ -112,6 +134,7 @@
 				border: 1px solid $secondGrey;
 				border-radius: 4px;
 				margin-bottom: 50px;
+				padding: 0px;
 				.title{
 					border-bottom: 1px solid $secondGrey;
 					background: $red;
@@ -120,17 +143,37 @@
 					label{
 						color: black;
 						font-size: 22px;
+						padding: 0px;
 					}
 				}
 				.value{
+					.hour{
 					text-align: center;
-					label{
-						font-size: 17px;
-						display: block;
-						padding-bottom:10px;
-						padding-top: 10px;
-						border-bottom: 1px solid $secondGrey;
-						margin: 0px;
+						label{
+							font-size: 17px;
+							display: block;
+							padding-bottom:10px;
+							padding-top: 10px;
+							border-bottom: 1px solid $secondGrey;
+							margin: 0px;
+							span{
+								padding-left: 15px;
+							}
+						}
+					}
+					.price{
+					text-align: right;
+						label{
+							font-size: 17px;
+							display: block;
+							padding-bottom:10px;
+							padding-top: 10px;
+							border-bottom: 1px solid $secondGrey;
+							margin: 0px;
+							span{
+								padding-left: 15px;
+							}
+						}
 					}
 				}
 			}
