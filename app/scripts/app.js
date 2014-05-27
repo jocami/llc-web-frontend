@@ -10,16 +10,10 @@ angular.module('llcApp', [
 ])
     .config(function ($routeProvider) {
         $routeProvider
-            .when('/timeline', {
-                templateUrl: 'views/pages/timeline.html'
-            })
-            .when('/statistics', {
-                templateUrl: 'views/pages/statistics.html'
-            })
-            .when('/contact', {
-                templateUrl: 'views/pages/contact.html'
+            .when('/home', {
+                templateUrl: 'views/pages/home.html'
             })
             .otherwise({
-                redirectTo: '/timeline'
+                redirectTo: '/home'
             });
     });
