@@ -1,4 +1,13 @@
+body{
+    background-color: #B6B6B6 !important;
+    div{
+        padding: 0px;
+        margin: 0px;
+    }
+}
 .container{
+    background-color: white;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.29);
 	border: 1px solid $grey;
 	@media (max-width:853px){
 		border: none;

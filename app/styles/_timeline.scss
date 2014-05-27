@@ -10,7 +10,18 @@
 			border-bottom-right-radius: 0px;
 			border-bottom-left-radius: 0px;
 			color: black;
-			background: $orange;
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, #4D4D4D),
+				color-stop(1, #FFFFFF)
+			);
+			background-image: -o-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+			background-image: -moz-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+			background-image: -webkit-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+			background-image: -ms-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+			background-image: linear-gradient(to bottom, #4D4D4D 0%, #FFFFFF 100%);
 			font-weight: bold;
 		};
 		.body-timeline{
@@ -78,102 +89,96 @@
 		    position: relative;
 		}
 		.legend{
-			padding: 20px 0 0 55px;
 			.cheap{
-				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.39);
-				border: 1px solid $secondGrey;
-				border-radius: 4px;
-				margin-bottom: 50px;
-				padding: 0px;
-				.title{
-					border-bottom: 1px solid $secondGrey;
-					background: $green;
-					padding: 5px 0 0 0;
-					text-align: center;
-					label{
-						padding: 0px;
-						font-size: 22px;
-						color: black;
-					}
-				}
-				.value{
-					.hour{
-					text-align: center;
-					padding: 0px;
-						label{
-							font-size: 17px;
-							display: block;
-							padding-bottom:10px;
-							padding-top: 10px;
-							border-bottom: 1px solid $secondGrey;
-							margin: 0px;
-							span{
-								padding-left: 15px;
-							}
+				.panel-heading{
+						background-image: -webkit-gradient(
+							linear,
+							left top,
+							left bottom,
+							color-stop(0, #4D4D4D),
+							color-stop(1, #FFFFFF)
+						);
+						background-image: -o-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: -moz-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: -webkit-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: -ms-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: linear-gradient(to bottom, #4D4D4D 0%, #FFFFFF 100%);
+						text-align: center;
+						a{
+							font-size: 22px;
+							font-weight: bold;
+							text-decoration: none;
+							cursor: pointer;
 						}
-					}
-					.price{
-					text-align: right;
-					padding: 0px;
-						label{
-							font-size: 17px;
-							display: block;
-							padding-bottom:10px;
-							padding-top: 10px;
-							border-bottom: 1px solid $secondGrey;
-							margin: 0px;
-							span{
-								padding-left: 15px;
-							}
-						}
-					}
 				}
 			}
 			.expensive{
-				box-shadow: 0 1px 6px rgba(0, 0, 0, 0.39);
-				border: 1px solid $secondGrey;
-				border-radius: 4px;
-				margin-bottom: 50px;
-				padding: 0px;
-				.title{
-					border-bottom: 1px solid $secondGrey;
-					background: $red;
-					padding: 5px 0 0 0;
-					text-align: center;
-					label{
-						color: black;
-						font-size: 22px;
-						padding: 0px;
-					}
+				.panel-heading{
+						background-image: -webkit-gradient(
+							linear,
+							left top,
+							left bottom,
+							color-stop(0, #4D4D4D),
+							color-stop(1, #FFFFFF)
+						);
+						background-image: -o-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: -moz-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: -webkit-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: -ms-linear-gradient(bottom, #4D4D4D 0%, #FFFFFF 100%);
+						background-image: linear-gradient(to bottom, #4D4D4D 0%, #FFFFFF 100%);
+						text-align: center;
+						a{
+							font-size: 22px;
+							font-weight: bold;
+							text-decoration: none;
+							cursor: pointer;
+						}
 				}
-				.value{
-					.hour{
+			}
+			.cheap,.expensive{
+				a{
 					text-align: center;
-						label{
-							font-size: 17px;
-							display: block;
-							padding-bottom:10px;
-							padding-top: 10px;
-							border-bottom: 1px solid $secondGrey;
-							margin: 0px;
-							span{
-								padding-left: 15px;
-							}
+					font-size: 17px;
+
+				}
+				.panel-body{
+					padding-left: 0px;
+					padding-right: 0px;
+				}
+				div{
+					p{
+						padding: 0 20px 20px 10px;
+						border-bottom: 1px solid $grey;
+						font-size: 1.6em;
+						text-align: center;
+						i{
+							float: right;
+							border-radius: 4px;
+							font-weight: bold;
+							font-size: 14px;
+							color: $green;
+							font-size: 1.5em;
+							margin-top: -5px;
 						}
 					}
-					.price{
-					text-align: right;
-						label{
-							font-size: 17px;
-							display: block;
-							padding-bottom:10px;
-							padding-top: 10px;
-							border-bottom: 1px solid $secondGrey;
-							margin: 0px;
-							span{
-								padding-left: 15px;
-							}
-						}
+					label{
+						padding: 0 26px 20px 20px;
+						margin-top: 10px;
+						display: block;
+						font-size: 1.3em;
+						border-bottom: 1px solid $grey;
+						margin-bottom: -5px;
+						i{
+							margin-top: 8px;
+							font-size: 1.3em;
+							color: $red;
+							cursor: pointer;
+							float: right;
+						}	
+					}
+					label:last-child{
+						border-bottom: none;
+						padding-bottom: 5px;
 					}
 				}
 			}
@@ -325,6 +330,7 @@
 
 		.timeline-badge.success {
 		    background-color: $green !important;
+		    border: 3px solid $green-dark;
 		}
 
 		.timeline-badge.warning {
@@ -333,6 +339,7 @@
 
 		.timeline-badge.danger {
 		    background-color: $red !important;
+		    border: 3px solid $red-dark;
 		}
 
 		.timeline-badge.info {

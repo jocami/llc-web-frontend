@@ -1,4 +1,4 @@
-/* global , angular*/
+/*global angular*/
 'use strict';
 
 angular.module('llcApp')
@@ -14,7 +14,6 @@ angular.module('llcApp')
                 $scope.dt = null;
             };
 
-            // Disable weekend selection
             $scope.disabled = function(date, mode) {
                 return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
             };
@@ -29,6 +28,21 @@ angular.module('llcApp')
                 $event.stopPropagation();
 
                 $scope.opened = true;
+            };
+
+            $scope.oneAtATime = true;
+            $scope.isOpen = true;
+
+            $scope.cheap = ['Item 1', 'Item 2', 'Item 3'];
+            $scope.expensive = ['Item 1', 'Item 2', 'Item 3'];
+
+            $scope.addItem = function(object) {
+                var newItem = object.length + 1;
+                object.push('Item ' + newItem);
+            };
+
+            $scope.deleteItem = function(object, index) {
+                object.splice(index, 1);
             };
         }
         ]);
