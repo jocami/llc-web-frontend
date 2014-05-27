@@ -1,13 +1,19 @@
 #header{
 	padding: 12px 35px 0 35px;
 	min-height: 48px;
-	background: $black;
+	background-color: $black;
 	padding: 0px;
+	text-align: center;
+	padding-top: 10px;
 	.title{
-		padding: 0px !important;
-		margin: 0px !important;
-		text-align: center;
-		color: white;
+		img{
+				width: 50px;
+			}
+			label{
+				color: $white-dark;
+				font-size: 22px;
+				font-weight: bold;
+			}
 	}
 
 	@media (max-width:853px){
