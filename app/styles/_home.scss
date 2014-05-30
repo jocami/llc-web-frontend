@@ -6,7 +6,7 @@
 			padding: 0px;
 			margin: 0px;
 		}
-		.card{
+		.card-2{
 			background-color: $grey-dark;
 			border: 1px solid $grey;
 			border-radius: 4px;
@@ -15,25 +15,39 @@
 			margin-right: 30px;
 			margin-bottom: 30px;
 		}
+        .card-4{
+            background-color: $grey-dark;
+            border: 1px solid $grey;
+            border-radius: 4px;
+            height: 290px;
+            width: 24%;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
 	}
 	.card-timeline{
 		background-color: $grey-dark;
 		border: 1px solid $grey;
 		border-radius: 4px;
 		height: 610px;
-		.title{
-			color: $white-dark;
-			border-bottom: 1px dotted $grey;
-			text-align: center;
-			font-size: 17px;
-			font-weight: bold;
-			padding-top: 5px;
-		}
-		.timeline {
-		    list-style: none;
-		    padding: 20px 0 20px;
-		    position: relative;
-		    color: $white-dark;
+        overflow: scroll;
+        overflow-x: hidden; 
+        .title{
+            color: $white-dark;
+            border-bottom: 1px dotted $grey;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+        .timeline {
+            list-style: none;
+            padding: 20px 0 20px;
+            position: relative;
+            color: $white-dark;
+            li:nth-child(2n){
+                color: red;
+            }
 		}
 
 	    .timeline:before {
