@@ -6,7 +6,8 @@ angular.module('llcApp', [
     'ngResource',
     'ngRoute',
     'ui.date',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'pascalprecht.translate'
 ])
     .config(function ($routeProvider) {
         $routeProvider
@@ -17,3 +18,13 @@ angular.module('llcApp', [
                 redirectTo: '/home'
             });
     });
+    .config(['$translateProvider',
+        function ($translateProvider) {
+            
+            $translateProvider.useStaticFilesLoader({
+                  prefix: 'i18n/language_',
+                  suffix: '.json'
+                });
+            $translateProvider.preferredLanguage('es');
+        }
+    ]);
