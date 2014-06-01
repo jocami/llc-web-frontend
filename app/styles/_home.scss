@@ -46,7 +46,15 @@
             position: relative;
             color: $white-dark;
             li:nth-child(2n){
-                color: red;
+                .timeline-panel{
+                    text-align: right;
+                    float:right;
+                    left: -37px;
+                    .hour{
+                        border-bottom: 1px solid $grey-dark;
+                        background-color: yellow;
+                        }
+                    }
             }
 		}
 
