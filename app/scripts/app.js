@@ -8,7 +8,7 @@ angular.module('llcApp', [
     'ui.date',
     'ui.bootstrap'
 ])
-    .config(function ($routeProvider) {
+    .config(function($routeProvider) {
         $routeProvider
             .when('/home', {
                 templateUrl: 'views/pages/home.html'

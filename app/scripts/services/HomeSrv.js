@@ -1,20 +1,18 @@
-/*global angular*/
+/*global UrlApiServicesOrigins, angular*/
 'use strict';
+(function() {
+    angular.module('llcApp').factory('HomeSrv', function($http, $q) {
 
-angular.module('llcApp')
-    .factory('HomeSrv', ['$scope', function($http, $q) {
-
-        var url = "http://localhost:8080/lightlowcost/api/valuesDay/20140512";
-
+        var url = "http://192.168.1.132:8084/lightlowcost/api/valuesDay/20140604";
         function getValuesDay() {
             var values = $q.defer();
             $http.get(url).then(function(data) {
-                values.resolve(data);
+                values.resolve(data.data);
             });
             return values.promise;
         }
         return {
             getValuesDay: getValuesDay
         };
-    }
-    }]);
+    });
+}());
