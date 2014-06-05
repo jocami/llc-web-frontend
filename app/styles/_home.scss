@@ -14,7 +14,17 @@
 			width: 44%;
 			margin-right: 30px;
 			margin-bottom: 30px;
-		}
+            text-align: center;
+            .login{
+                padding: 65px;
+                img{
+                    width: 100px;
+                }
+            }
+            label{
+                color: $grey;
+            }
+        }
         .card-4{
             background-color: $grey-dark;
             border: 1px solid $grey;

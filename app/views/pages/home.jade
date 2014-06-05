@@ -3,23 +3,24 @@
 		.col-md-6.cards
 			.col-md-12
 				.col-md-3.card-2
+					.col-md-12.login
+						img(src = 'img/llc-icon.png', alt = 'Low light cost')
+					.col-md-12
+						label Redes Sociales
 				.col-md-3.card-2
 			.col-md-12
 				.col-md-3.card-2
 				.col-md-3.card-2
 		.col-md-6.card-timeline
 			.col-md-12.title
-				lable Timeline
+				button.btn.btn-primary(ng-click="changeData('normalRate')") Day
+				button.btn.btn-primary(ng-click="changeData('nightRate')") Night
+				button.btn.btn-primary(ng-click="changeData('carRate')") Car
 			ul.col-md-12.timeline        
-				li(ng-repeat = 'data in datas.normalRate')
+				li(ng-repeat = 'data in datas')
 					.timeline-badge.success
 					.timeline-panel.col-md-12
 						.col-md-12.hour
 							label {{data.hour}}
 						.col-md-12.value
 							label {{data.value}}
-	.col-md-12.cards
-		.col-md-3.card-4
-		.col-md-3.card-4
-		.col-md-3.card-4
-		.col-md-3.card-4
